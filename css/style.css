@@ -1,0 +1,139 @@
+/* all common css start  */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #f1fbff;
+}
+.section-padding {
+    padding: 50px 0;
+}
+textarea {
+    resize: none;
+}
+/* all common css start  */
+/* navbar start here  */
+.nav-link {
+    margin: 0 5px;
+}
+.nav-link {
+    transition: .4s;
+}
+.nav-link:hover {
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+}
+/* navbar end here  */
+/* carousel part start  */
+.carousel {
+    margin-top: 101px;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.w-100 {
+    height: 100vh;
+}
+.w-80 {
+    height: 60vh;
+}
+/* carousel part end */
+/* about part start  */
+.about-img img {
+    height: 70vh;
+    border-radius: 5px;
+}
+.about-text {
+    margin-top: 50px;
+}
+/* about part end */
+/* service part start  */
+.services .card-body i {
+    font-size: 50px;
+}
+/* service part end */
+/* port folio part start  */
+.portfolio .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.20);
+}
+/* port folio part end */
+/* team part start  */
+.team .card-body i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.team .card {
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.20);
+}
+/* team part ends */
+/* Responsive part start here   */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 50px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+    .about-text {
+        padding: 6% 0;
+    }
+    .about-img img {
+        height: 50vh;
+        border-radius: 5px;
+    }
+    .common_img {
+        height: 50vh;
+    }
+    .carousel-item {
+        height: 50vh;
+        min-height: 150px;
+    }
+}
+/* Responsive part ends here  */
